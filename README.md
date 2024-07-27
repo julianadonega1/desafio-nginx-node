@@ -15,7 +15,7 @@ Cria 3 containers:
 - **nginx** - que servirá de proxy reverso, recebendo as chamadas na porta 8080 e redirecionando para a aplicação e depois devolvendo a resposta para o usuário no navegador.
 
 # Conceito
-A idéia principal é que quando um usuário acessar o nginx na porta 8080, este último fará uma chamada em nossa aplicação nodejs que roda na porta 3000. Essa aplicação por sua vez adicionará um registro (name: Lucas) em nosso banco de dados mysql, cadastrando um nome na tabela people.
+A idéia principal é que quando um usuário acessar o nginx na porta 8080, este último fará uma chamada em nossa aplicação nodejs que roda na porta 3000. Essa aplicação por sua vez adicionará um registro em nosso banco de dados mysql, cadastrando um nome na tabela people.
 
 O retorno da aplicação nodejs para o nginx deverá ser:
 
